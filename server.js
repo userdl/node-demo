@@ -19,7 +19,7 @@ var server = http.createServer(function(request, response){
 
   /******** 从这里开始看，上面不要看 ************/
 
-  console.log('方方说：得到 HTTP 路径\n' + path)
+  console.log('得到 HTTP 路径\n' + path)
   if(path == '/style'){
     response.setHeader('Content-Type','text/css;charset=utf-8')
     response.write('body{background-color:#ddd;}h1{color:red;}')
